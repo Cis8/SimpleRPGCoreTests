@@ -3,18 +3,18 @@ using NUnit.Framework;
 using Moq;
 using UnityEngine;
 using ElectricDrill.SimpleRpgCore;
-using ElectricDrill.SimpleRpgCore.Health;
 using ElectricDrill.SimpleRpgCore.Stats;
 using ElectricDrill.SimpleRpgCore.Utils;
+using ElectricDrill.SimpleRpgHealth;
 using Object = UnityEngine.Object;
 
-namespace ElectricDrill.SimpleRpgCoreTests
+namespace ElectricDrill.SimpleRpgHealthTests
 {
     public class EntityHealthTests
     {
         const long MAX_HP = 100;
 
-        public class MockSource : Source 
+        public class MockSource : Source
         {
             public static MockSource Create()
             {
